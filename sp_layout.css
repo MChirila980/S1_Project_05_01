@@ -12,53 +12,145 @@
    Filename: sp_layout.css
 
 */
-
+/* The background color changed to white from tan color */
+/* (the outline is not (solid/original) but now dashed) and the color is white.(looks like pokatdots)-----its for the header,ul,li,the nav, and the attributes*/
+/* the box-sizing:border-box organizes the navs a little/ i got to tweek that tho. */
 /* Window and Body Styles */
 html {
-    background-color: rgb(230, 182, 144);
     height: 100%;
+}
+/* this is the height set to 100% for the html doc. ----remember to fix becase i dont know if I want this separated.---*/
+body {
+    background-color: rgb(255, 255, 255);
     width: 95%;
     min-width: 640px;
     max-width: 960px;
     min-height: 100%;
- }
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header,
+ul,
+li,
+nav,
+a {
+    
+    box-sizing: border-box;
+}
 
 
-
+/*  phseudo code ::/ fixed my nav bars*/
 /* Row Styles */
+.row::after {
+    clear: both;
+    content: "";
+    display: table;
+}
 
-
-
-
-
+/*  */
 /* Page Header Styles */
+/* 7 */
+body>header>img {
+    display: block;
+    width: 70%;
+    float: left;
+}
 
-
-
-
-
-
+/*  */
+footer nav {
+    float: left;
+    padding: 0 2%;
+    widows: 70%;
+}
+/*  */
+header>nav {
+    display: block;
+    float: left;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 30%;
+}
+/* sets the body and header and the attributes width */
+header>nav a {
+    display: block;
+    width: 100%;
+}
+/* THese are the navigation list styles; im setting the class of the horizontal li elements- width to 12.5%, im floating it left */
 /* Horizontal Navigation List Styles */
+nav.horizontal li {
+    display: block;
+    width: 12.5%;
+    float: left;
+}
 
 
-
-
+/* These are all the topics ID classes ul, li, changing the margins widths and display.*/
 /* Topics Styles */
+ul#topics>li {
+    display: block;
+    width: 20%;
+    float: left;
+    margin-left: 0%;
+    margin-right: 1.5%;
+}
+
+#topics li:first-of-type {
+    margin-left: 7.75%;
+}
 
 
+#topics li:last-of-type {
+    margin-right: 7.75%;
+}
+ul#topics li img {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
-
-
+/* setting the elements to this width of 50% */
 /* HR Styles */
+hr {
+    width: 50%;
+}
 
 
 
-
+/* this are the ID stuff to edit the customers comments and change the width and move them with the margin elements. The ul id comments of ul, li imgv and p*/
+/* floating the comments left, changing the width of the comments, the display is set to block. */
 /* Customer Comment Styles */
+ul#comments {
+    width: 75%;
+    margin: 40px auto;
+}
 
+ul#comments li {
+    display: block;
+    width: 50%;
+    float: left;
+    margin-bottom: 30px;
+}
 
+ul#comments li img {
+    display: block;
+    width: 20%;
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
 
+ul#comments li p {
+    float: left;
+    width: 70%;
+}
+
+/* The footer styles is cleared for both and is display set to block */
 /* Footer Styles */
 
-
+footer {
+    display: block;
+    clear: both;
+}
