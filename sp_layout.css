@@ -12,16 +12,17 @@
    Filename: sp_layout.css
 
 */
-/* The background color changed to white from tan color */
+
 /* (the outline is not (solid/original) but now dashed) and the color is white.(looks like pokatdots)-----its for the header,ul,li,the nav, and the attributes*/
 /* the box-sizing:border-box organizes the navs a little/ i got to tweek that tho. */
 /* Window and Body Styles */
 html {
     height: 100%;
 }
+
 /* this is the height set to 100% for the html doc. ----remember to fix becase i dont know if I want this separated.---*/
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 182, 72);
     width: 95%;
     min-width: 640px;
     max-width: 960px;
@@ -35,12 +36,12 @@ ul,
 li,
 nav,
 a {
-    
+
     box-sizing: border-box;
 }
 
 
-/*  phseudo code ::/ fixed my nav bars*/
+/*  phseudo code ::/ row classes*/
 /* Row Styles */
 .row::after {
     clear: both;
@@ -48,7 +49,7 @@ a {
     display: table;
 }
 
-/*  */
+
 /* Page Header Styles */
 /* 7 */
 body>header>img {
@@ -57,13 +58,14 @@ body>header>img {
     float: left;
 }
 
-/*  */
+/* The footer and the nav are floated left, the padding is set at 0 2% and the widows is at 70%. */
 footer nav {
     float: left;
     padding: 0 2%;
     widows: 70%;
 }
-/*  */
+
+/* The nave that is a derect decendent to the header, is floated to the left, width is 30%. */
 header>nav {
     display: block;
     float: left;
@@ -71,11 +73,13 @@ header>nav {
     padding-right: 2%;
     width: 30%;
 }
+
 /* sets the body and header and the attributes width */
 header>nav a {
     display: block;
     width: 100%;
 }
+
 /* THese are the navigation list styles; im setting the class of the horizontal li elements- width to 12.5%, im floating it left */
 /* Horizontal Navigation List Styles */
 nav.horizontal li {
@@ -103,6 +107,7 @@ ul#topics>li {
 #topics li:last-of-type {
     margin-right: 7.75%;
 }
+
 ul#topics li img {
     display: block;
     width: 50%;
@@ -111,7 +116,7 @@ ul#topics li img {
 }
 
 
-/* setting the elements to this width of 50% */
+/* setting the hr styles to this width of 50% */
 /* HR Styles */
 hr {
     width: 50%;
