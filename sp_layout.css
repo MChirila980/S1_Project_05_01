@@ -22,7 +22,7 @@ html {
 
 /* this is the height set to 100% for the html doc. ----remember to fix becase i dont know if I want this separated.---*/
 body {
-    background-color: rgb(255, 182, 72);
+    background-color: rgb(255, 255, 255);
     width: 95%;
     min-width: 640px;
     max-width: 960px;
